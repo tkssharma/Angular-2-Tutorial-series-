@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="//npmcdn.com/es6-promise@3.0.2/dist/es6-promise.js"></script>
+  <script src="//npmcdn.com/traceur@0.0.96/bin/traceur.js"></script>
+  <script src="//npmcdn.com/systemjs@0.19.16/dist/system.src.js"></script>
+  <script>
+    Promise.all([ // <1>
+      System.import('./es6module.js'), // <2>
+      System.import('./es5module.js') // <3>
+    ]).then(function (modules) { // <4>
+      var moduleNames = modules // <5>
+        .map(function (m) { return m.name; }) // <6>
+        .join(', '); // <7>
+
+      console.log('The following modules are loaded: ' + moduleNames);
+    });
+  </script>
+</head>
+<body></body>
+</html>

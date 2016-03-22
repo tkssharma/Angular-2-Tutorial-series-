@@ -1,0 +1,25 @@
+{
+  "name": "basic_routing",
+  "version": "1.0.0",
+  "description": "Angular 2 Development with TypeScript",
+  "homepage": "angular-2-development-with-typescript",
+  "private": true,
+  "scripts": {
+    "start": "live-server"
+  },
+  "engines": {
+    "npm": ">=2.14.x"
+  },
+  "dependencies": {
+    "es6-shim": "0.33.13",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "0.19.23",
+    "zone.js": "0.5.15",
+    "angular2": "2.0.0-beta.7"
+  },
+  "devDependencies": {
+    "live-server": "^0.8.2",
+    "typescript": "^1.7.5"
+  }
+}
